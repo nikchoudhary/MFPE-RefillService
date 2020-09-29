@@ -73,7 +73,7 @@ namespace MailOrderPharmacyRefillService.Repository
             
             string data = JsonConvert.SerializeObject(subscription_id);
 
-            Uri baseAddress = new Uri("http://20.193.128.185/api/Subscription/ViewDetails_BySubID/" + subscription_id);
+            Uri baseAddress = new Uri("http://20.193.136.208/api/Subscription/ViewDetails_BySubID/" + subscription_id);
             HttpClient client = new HttpClient();
             client.BaseAddress = baseAddress;
 
